@@ -111,7 +111,7 @@ a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 27.7em;
     grid-template-areas: 
-        'hero-title-contact hero-word'
+        'hero-title-contact hero-form'
     ;
     margin-top: 1em;
     margin-bottom: 2.5em;
@@ -212,7 +212,9 @@ a {
     text-align: center;
   }
 
-  
+.hero-form {
+
+}
 
 /**[HOME]**/
 .headline img {
