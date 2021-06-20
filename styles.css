@@ -70,8 +70,8 @@ a {
     background-color:#d0d3fc;
     border-radius: 10px;
     
-  }
-  
+}
+
 /*[Website Content]*/
 
 .content-wrapper-1 {
@@ -81,7 +81,6 @@ a {
     grid-template-areas: 
         'hero-word hero-picture'
     ;
-    margin-top: 5em;
     margin-bottom: 2.5em;
 }
 
@@ -92,7 +91,6 @@ a {
     grid-template-areas: 
         'hero-picture hero-word'
     ;
-    margin-top: 5em;
     margin-bottom: 2.5em;
 }
 
@@ -152,6 +150,7 @@ a {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 5em;
 }
 
 .hero-picture {
@@ -160,6 +159,10 @@ a {
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+.hero-picture img {
+    width: 500px;
 }
 
 .hero-title {
