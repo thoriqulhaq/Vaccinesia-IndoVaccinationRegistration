@@ -146,11 +146,31 @@ a {
 
 .hero-word {
     grid-area: hero-word;
-    display: grid;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-top: 4em;
+}
+
+.hero-word h1 {
+    padding-top: 20px;
+    font-size: 49px;
+}
+
+.hero-word p {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+#learnmore-button {
+    margin-top: 50px;
+}
+
+#learnmore-button a {
+    margin-top: 50px;
+    text-decoration: none;
+    color: #858CE4;
+    font-size: 20px;
 }
 
 .hero-picture {
