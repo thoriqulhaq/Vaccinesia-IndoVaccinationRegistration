@@ -1,3 +1,3 @@
 # Vaccinesia-IndoVaccinationRegistration
 
-- Web Programming Project -
+Web Programming Project
