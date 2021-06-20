@@ -210,10 +210,10 @@ a {
 .hero-centertitle {
     padding-bottom: 4em;
     text-align: center;
-  }
+}
 
 .hero-form {
-
+    align-items: center;
 }
 
 /**[HOME]**/
