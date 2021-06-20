@@ -97,7 +97,7 @@ a {
 .content-wrapper-3 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2em 12em;
+    grid-template-rows: 4em 8em;
     grid-template-areas: 
         'hero-title'
         'hero-link'
@@ -201,10 +201,18 @@ a {
 }
 
 .hero-link {
-    grid-area: hero-content;
+    grid-area: hero-link;
     display: grid;
-    justify-content: center;
+    text-align: center;
     width: 100%;
+}
+
+.hero-link h1 {
+    font-size: 49px;
+}
+
+.hero-link p {
+    font-size: 24px;
 }
 
 .hero-centertitle {
