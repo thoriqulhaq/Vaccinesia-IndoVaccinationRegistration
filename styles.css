@@ -193,6 +193,7 @@ th, td {
 
 .hero-word {
     grid-area: hero-word;
+    display: grid;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -517,6 +518,25 @@ small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}
         margin-bottom: 2.5em;
     }
     
+    .hero-word h1 {
+        padding-top: 20px;
+        font-size: 35px;
+    }
+    
+    .hero-word p {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .hero-title h1 {
+        font-size: 35px;
+    }
+    
+
+    .hero-picture img {
+        width: 100%;
+    }
+
     .content-wrapper-contact {
         display: grid;
         grid-template-columns: 1fr;
@@ -537,7 +557,11 @@ small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}
         padding-right: 3.5em;
         width: 100%;  
     }
-    
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
     .content-wrapper-advisory {
         display: grid;
         grid-template-columns: 1fr;
