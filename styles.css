@@ -423,17 +423,16 @@ input[type=reset]:hover {
     outline: none;
     transition: 0.4s;
     
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active1, .accordion1:hover {
-    background:linear-gradient(90deg, rgb(91, 99, 214) 0%, #959cf3 50%, #dee0fa 100%);
-  }
+}
 
-  
-  
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active1, .accordion1:hover {
+    background:linear-gradient(90deg, rgb(91, 99, 214) 0%, #959cf3 50%, #dee0fa 100%);
+}
+
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
     padding: 0 18px;
     margin-top: 18px;;
     background-color: rgb(255, 255, 255);
@@ -441,21 +440,21 @@ input[type=reset]:hover {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     
-  } 
+} 
 
-  .accordion1:after {
+.accordion1:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: #858CE4;
     float: right;
     margin-left: 5px;
-  }
-  
-  .active1:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
+}
 
-  
+.active1:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
 /**[Location]**/
 
 .embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%; text-align: center;} 
