@@ -89,7 +89,6 @@ a {
 .active{
     background-color:#d0d3fc;
     border-radius: 10px;
-    
 }
 
 /*[Website Content]*/
@@ -620,5 +619,10 @@ small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}
         width: 100%;
         margin: 0 auto;
         padding-bottom: 8em;
+    }
+
+    .active{
+        background-color: white;
+        border-radius: 0;
     }
 }
