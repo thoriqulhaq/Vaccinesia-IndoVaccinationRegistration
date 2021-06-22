@@ -37,6 +37,9 @@ a {
     padding: 6px;
     text-align: center;
 }
+.s0 {
+    background-color: #fff;
+}
 .s1 {
     background-image: url("img/Bg-fix.png");
     background-repeat: no-repeat;
@@ -524,7 +527,6 @@ small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}
         ;
         margin-top: 1em;
         margin-bottom: 2.5em;
-        
     }
 
     .hero-title-contact {
