@@ -629,4 +629,12 @@ small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}
         background-color: white;
         border-radius: 0;
     }
+
+    .hero-subtitle {
+        text-align: center;
+    }
+
+    .hero-subtitle h2 {
+        font-size: 22px;
+    }
 }
