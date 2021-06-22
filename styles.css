@@ -91,7 +91,7 @@ a {
 
 table {
     width: 75%;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
 
 table, th, td {
@@ -161,7 +161,7 @@ th, td {
 .content-wrapper-location {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 120em;
+    grid-template-rows: 140em;
     grid-template-areas:    
         'location-1 location-2 location-3'
     ;
@@ -195,17 +195,15 @@ th, td {
 
 .available-location-1 {
     grid-area: location-1;
-    display: grid;
+
 }
 
 .available-location-2 {
     grid-area: location-2;
-    display: grid;
 }
 
 .available-location-3 {
     grid-area: location-3;
-    display: grid;
 }
 
 .hero-word h1 {
