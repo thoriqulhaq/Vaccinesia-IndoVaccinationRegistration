@@ -561,6 +561,10 @@ small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}
         font-size: 45px;
     }
 
+    .hero h3 {
+        font-size: 18px;
+    }
+
     .content-wrapper-advisory {
         display: grid;
         grid-template-columns: 1fr;
