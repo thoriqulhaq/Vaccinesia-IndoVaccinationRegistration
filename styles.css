@@ -241,6 +241,10 @@ th, td {
     width: 100%;
 }
 
+.picture-setting {
+    padding-top: 4em;
+}
+
 .hero-picture img {
     width: 500px;
 }
