@@ -57,7 +57,7 @@ a {
     padding-top: 3.5em;
 }
 .s4 {
-    background-color: #F2F2F0;
+    background-color: #fff;
     padding-bottom: 3.5em;
     padding-top: 3.5em;
 }
@@ -298,7 +298,7 @@ th, td {
     padding-right: 10px;
 }
 .main-container {
-    width: 1400px;
+    width: 1200px;
     margin: 0 auto;
     padding-bottom: 3.5em;
 }
