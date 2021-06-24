@@ -232,6 +232,10 @@ th, td {
     font-size: 20px;
 }
 
+#Source{
+    color: #858CE4;
+}
+
 .hero-picture {
     grid-area: hero-picture;
     display: grid;
