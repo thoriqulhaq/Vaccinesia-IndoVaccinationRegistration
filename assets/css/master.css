@@ -121,8 +121,8 @@ body {
 }
 
 .default-light-menu:hover {
-    background: #2196F3 !important;
-    color: #fff;
+    background: #8c4ed3 !important;
+    color: rgb(255, 255, 255);
 }
 
 /*------------------------------------------------------------------
@@ -197,7 +197,7 @@ body {
 }
 
 .box-primary {
-    border-top-color: #22a1f9;
+    border-top-color: #a25ce4;
 }
 
 /*------------------------------------------------------------------
@@ -345,9 +345,9 @@ table.dataTable>tbody>tr.child ul.dtr-details {
 
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-    color: #007bff;
+    color: #9447db;
     background-color: #fff;
-    border-bottom: 2px solid #22a1f9;
+    border-bottom: 2px solid #b36add;
 
 }
 
@@ -369,6 +369,10 @@ table.dataTable>tbody>tr.child ul.dtr-details {
 
 .license span {
     margin-bottom: 1em;
+}
+
+.bg-violet {
+    background-color: #9499e2 ;
 }
 
 /*------------------------------------------------------------------
@@ -395,7 +399,7 @@ table.dataTable>tbody>tr.child ul.dtr-details {
 }
 
 .blue {
-    color: #2185d0 !important;
+    color: #b356d8 !important;
 }
 
 .grey {

@@ -11,6 +11,7 @@
     <link href="assets/vendor/fontawesome/css/brands.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/master.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image" href="./img/KemenKes-logo-bw.png"/>
     <link href="assets/vendor/chartsjs/Chart.min.css" rel="stylesheet">
     <link href="assets/vendor/flagiconcss/css/flag-icon.min.css" rel="stylesheet">
 </head>
@@ -40,7 +41,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="users.html"><i class="fas fa-user-friends"></i> Vaccine Registration</a>
+                    <a href="users.html"><i class="fas fa-syringe"></i> Vaccine Registration</a>
                 </li>
                 <li>
                     <a href="settings.html"><i class="fas fa-hospital"></i> Hospital List</a>
@@ -48,13 +49,13 @@
             </ul>
         </nav>
         <div id="body" class="active">
-            <nav class="navbar navbar-expand-lg navbar-white bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light bg-violet">
                 <button type="button" id="sidebarCollapse" class="btn btn-light"><i class="fas fa-bars"></i><span></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item dropdown">
                             <div class="nav-dropdown">
-                                <a href="" class="nav-item nav-link dropdown-toggle text-secondary" data-toggle="dropdown"><i class="fas fa-user"></i> <span> Unknown</span> <i style="font-size: .8em;" class="fas fa-caret-down"></i></a>
+                                <a href="" class="nav-item nav-link dropdown-toggle text-light" data-toggle="dropdown"><i class="fas fa-user"></i> <span>    Unknown</span> <i style="font-size: .8em;" class="fas fa-caret-down"></i></a>
                                 <div class="dropdown-menu dropdown-menu-right nav-link-menu">
                                     <ul class="nav-list">
                                         <li><a href="" class="dropdown-item"><i class="fas fa-address-card"></i> Profile</a></li>
