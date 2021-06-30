@@ -222,8 +222,8 @@ session_start();
                                             <tr>
                                                 <td> <?php echo $d['City']; ?> </td>
                                                 <td> <?php echo $d['Hospital']; ?> </td>
-                                                <td> <?php echo $d['Sinovac']; ?> </td>
-                                                <td> <?php echo $d['Astrazeneca']; ?> </td>
+                                                <td> <?php echo $d['Sinovac']; ?> Doses</td>
+                                                <td> <?php echo $d['Astrazeneca']; ?> Doses</td>
                                             </tr>
                                         
                                     <?php 
