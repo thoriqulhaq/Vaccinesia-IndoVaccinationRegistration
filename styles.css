@@ -165,18 +165,6 @@ th, td {
     padding-bottom: 12em;
 }
 
-.content-wrapper-location {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 230em;
-    grid-template-areas:    
-        'location-1 location-2'
-    ;
-    margin-bottom: 2.5em;
-    padding-top: 5em;
-    padding-bottom: 12em;
-}
-
 .column-1 {
     grid-area: column-1;
     display: grid;
@@ -202,12 +190,7 @@ th, td {
 }
 
 .available-location-1 {
-    grid-area: location-1;
-    text-align: center;
-}
-
-.available-location-2 {
-    grid-area: location-2;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -471,11 +454,52 @@ input[type=reset]:hover {
 .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} 
 small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}
 
+#hero-centertitle {
+    margin-top: 10em;
+}
+
 .info-setting {
     width: 1000px;
     margin: 0 auto;
     padding-bottom: 8em;
 }
+
+#search-bar {
+    width: 100%;
+}
+
+.outer-input {
+    display: grid;
+    grid-template-columns: 90fr 10fr;
+    grid-template-rows: 23.5em;
+    grid-template-areas: 
+        'input1 input2'
+    ;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.inner-input-1 {
+    grid-area: input1;
+    margin-right: 10px;
+}
+
+.inner-input-2 {
+    grid-area: input2;
+}
+
+#province {
+    height: 40px;
+    text-align-last: center;
+    width: 100%;
+    
+}
+
+#search {
+    height: 40px;
+    width: 100%;
+}
+
 /*[Website Responsivity]*/
 
 @media screen and (max-width: 1400px) {
@@ -588,34 +612,7 @@ small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}
         margin: 0 auto;
     }
     
-    .content-wrapper-location {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 260em;
-        grid-template-areas:    
-            'location-1'
-            'location-2'
-        ;
-        margin-bottom: 2.5em;
-        padding-top: 5em;
-        padding-bottom: 12em;
-        padding-left: 0;
-    }
 
-    .available-location-1 {
-        grid-area: location-1;
-        text-align: center;
-    }
-
-    .available-location-2 {
-        grid-area: location-2;
-        text-align: center;
-    }
-    
-    .available-location-3 {
-        grid-area: location-3;
-        text-align: center;
-    }
 
     table {
         margin: 0 auto;

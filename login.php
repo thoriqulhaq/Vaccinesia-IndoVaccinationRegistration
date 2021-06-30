@@ -25,7 +25,7 @@
                 <h1 style="color:#858CE4;" ><a style="color:#858CE4;" href="index.html">Vaccinesia</a></h1>
               </div>
               <p class="login-card-description">Login into your account</p>
-              <form action="#!">
+              <form method="post" action="login_process.php">
                   <div class="form-group">
                     <label for="email" class="sr-only">Email</label>
                     <input type="email" name="email" id="email" class="form-control" placeholder="Email address">
@@ -34,10 +34,12 @@
                     <label for="password" class="sr-only">Password</label>
                     <input type="password" name="password" id="password" class="form-control" placeholder="Password">
                   </div>
-                  <input name="login" id="login" class="btn btn-block login-btn mb-4" type="button" value="Login">
+                  <button name="login" id="login" class="btn btn-block login-btn mb-4" type="submit">
+                    Login
+                  </button>
                 </form>
                 <a href="forgotpassword.html" class="forgot-password-link">Forgot password?</a>
-                <p class="login-card-footer-text">Don't have an account? <a href="signup.html" class="text-reset">Register here</a></p>
+                <p class="login-card-footer-text">Don't have an account? <a href="signup.php" class="text-reset">Register here</a></p>
                 <nav class="login-card-footer-nav">
                   <a href="#!">Terms of use.</a>
                   <a href="#!">Privacy policy</a>
