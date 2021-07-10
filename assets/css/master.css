@@ -406,6 +406,10 @@ table.dataTable>tbody>tr.child ul.dtr-details {
     color: #767676 !important;
 }
 
+.green {
+    color: rgb(48, 226, 78) !important;
+}
+
 /*------------------------------------------------------------------
 [11. Responsive properties] 
 */

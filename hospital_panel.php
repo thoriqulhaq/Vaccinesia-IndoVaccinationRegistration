@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Vaccinesia - Admin</title>
+    <title>Vaccinesia - Hospital</title>
     <link href="assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet">
     <link href="assets/vendor/fontawesome/css/solid.min.css" rel="stylesheet">
     <link href="assets/vendor/fontawesome/css/brands.min.css" rel="stylesheet">
@@ -24,27 +24,10 @@
             </div>
             <ul class="list-unstyled components text-secondary">
                 <li>
-                    <a href="admin_panel.php"><i class="fas fa-home"></i> Dashboard</a>
-                </li>
-                <li>
-                    <a href="#uielementsmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle no-caret-down"><i class="fas fa-user"></i> Account</a>
-                    <ul class="collapse list-unstyled" id="uielementsmenu">
-                        <li>
-                            <a href="admin_account.php"><i class="fas fa-angle-right"></i> Admin</a>
-                        </li>
-                        <li>
-                            <a href="user_account.php"><i class="fas fa-angle-right"></i> User</a>
-                        </li>
-                        <li>
-                            <a href="hospital_account.php"><i class="fas fa-angle-right"></i> Hospital</a>
-                        </li>
-                    </ul>
+                    <a href="hsopital_panel.php"><i class="fas fa-home"></i> Dashboard</a>
                 </li>
                 <li>
                     <a href="vacinne_registration_admin.php"><i class="fas fa-syringe"></i> Vaccine Registration</a>
-                </li>
-                <li>
-                    <a href="hospital_list.php"><i class="fas fa-hospital"></i> Hospital List</a>
                 </li>
             </ul>
         </nav>
@@ -77,72 +60,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6 col-md-6 mt-3">
-                            <div class="card">
-                                <div class="content">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="icon-big text-center">
-                                                <i class="teal fas fa-user"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-8">
-                                            <div class="detail">
-                                                <p class="detail-subtitle">Registered User</p>
-                                                <?php 
-                                                
-                                                    $cons = mysqli_connect('localhost', 'root', '');
-                                                    mysqli_select_db($cons, 'vaccinesia');
-
-                                                    $result1 = mysqli_query($cons, "select * from user");
-                                                    $num1 = mysqli_num_rows($result1);
-
-                                                ?>
-                                                <span class="number"><?php echo $num1; ?></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="footer">
-                                        <hr />
-                                        <div class="stats">
-                                            <i></i> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 mt-3">
-                            <div class="card">
-                                <div class="content">
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="icon-big text-center">
-                                                <i class="olive fas fa-hospital"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-8">
-                                            <div class="detail">
-                                                <p class="detail-subtitle">Registered Hospital</p>
-                                                <?php 
-                                                
-                                                $result2 = mysqli_query($cons, "select * from hospital_location");
-                                                $num2 = mysqli_num_rows($result2);
-                                                
-                                                ?>
-                                                <span class="number"><?php echo $num2; ?></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="footer">
-                                        <hr />
-                                        <div class="stats">
-                                            <i></i> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 mt-3">
+                        <div class="col-sm-6 col-md-4 mt-3">
                             <div class="card">
                                 <div class="content">
                                     <div class="row">
@@ -156,6 +74,9 @@
                                                 <p class="detail-subtitle">Registered For Vaccination</p>
                                                 <?php 
                                                 
+                                                $cons = mysqli_connect('localhost', 'root', '');
+                                                mysqli_select_db($cons, 'vaccinesia');
+
                                                 $result3 = mysqli_query($cons, "select * from reg_vac");
                                                 $num3 = mysqli_num_rows($result3);
                                                 
@@ -173,22 +94,25 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6 mt-3">
+                        <div class="col-sm-6 col-md-4 mt-3">
                             <div class="card">
                                 <div class="content">
                                     <div class="row">
                                         <div class="col-sm-4">
                                             <div class="icon-big text-center">
-                                                <i class="grey fas fa-envelope"></i>
+                                                <i class="orange fas fa-syringe"></i>
                                             </div>
                                         </div>
                                         <div class="col-sm-8">
                                             <div class="detail">
-                                                <p class="detail-subtitle">Mail</p>
+                                                <p class="detail-subtitle">Vaccine (Sinovac)</p>
                                                 <?php 
                                                 
-                                                $result4 = mysqli_query($cons, "select * from mail");
-                                                $num4 = mysqli_num_rows($result4);
+                                                $cons = mysqli_connect('localhost', 'root', '');
+                                                mysqli_select_db($cons, 'vaccinesia');
+
+                                                $result3 = mysqli_query($cons, "select * from hospital_location where Vaccine = 'Sinovac' and LocationID = ' '");
+                                                $num3 = mysqli_num_rows($result3);
                                                 
                                                 ?>
                                                 <span class="number"><?php echo $num3; ?></span>
@@ -204,6 +128,41 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-sm-6 col-md-4 mt-3">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="icon-big text-center">
+                                                <i class="green fas fa-syringe"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="detail">
+                                                <p class="detail-subtitle">Vaccine (Astrazeneca)</p>
+                                                <?php 
+                                                
+                                                $cons = mysqli_connect('localhost', 'root', '');
+                                                mysqli_select_db($cons, 'vaccinesia');
+
+                                                $result3 = mysqli_query($cons, "select * from reg_vac");
+                                                $num3 = mysqli_num_rows($result3);
+                                                
+                                                ?>
+                                                <span class="number"><?php echo $num3; ?></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footer">
+                                        <hr />
+                                        <div class="stats">
+                                            <i></i> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

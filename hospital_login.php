@@ -25,7 +25,7 @@
                 <h1 style="color:#858CE4;" ><a style="color:#858CE4;" href="index.html">Vaccinesia</a></h1>
               </div>
               <p class="login-card-description">Login into your account</p>
-              <form method="post" action="login_process.php">
+              <form method="post">
                   <div class="form-group">
                     <label for="email" class="sr-only">Email</label>
                     <input type="email" name="email" id="email" class="form-control" placeholder="Email address">
@@ -37,7 +37,32 @@
                   <button name="login" id="login" class="btn btn-block login-btn mb-4" type="submit">
                     Login
                   </button>
+                  <?php 
+
+                  session_start();
+
+                  $con = mysqli_connect('localhost', 'root', '');
+
+                  mysqli_select_db($con, 'vaccinesia');
+
+                  $email = $_POST['email'];
+                  $password = $_POST['password'];
+
+                  $s = "select * from hospital where email = '$email' && password = '$password'";
+
+                  $result = mysqli_query($con, $s);
+
+                  $num = mysqli_num_rows($result);
+
+                  if ($num == 1) {
+                      header('location:admin_panel.php');
+                  }else {
+                      header('location:login.php');
+                  }
+
+                ?>
                 </form>
+                
                 <a href="forgotpassword.html" class="forgot-password-link">Forgot password?</a>
                 <p class="login-card-footer-text">Don't have an account? <a href="signup.php" class="text-reset">Register here</a></p>
                 <nav class="login-card-footer-nav">
