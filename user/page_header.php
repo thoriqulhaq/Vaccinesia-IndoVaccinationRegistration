@@ -126,7 +126,7 @@ if (session_id() == '' || !isset($_SESSION['user_email'])) {
                <nav class="navbar navbar-expand-lg navbar-light">
                    <div class="container-fluid">
                        
-                       <a class="navbar-brand" href="index.html">
+                       <a class="navbar-brand" href="index.php">
                            Vaccinessia
                            <img src="">
                        </a>
@@ -328,7 +328,7 @@ if (session_id() == '' || !isset($_SESSION['user_email'])) {
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
                         
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="index.php">
                             Vaccinessia
                             <img src="">
                         </a>
@@ -423,7 +423,7 @@ if (session_id() == '' || !isset($_SESSION['user_email'])) {
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
                         
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="index.php">
                             Vaccinessia
                             <img src="">
                         </a>
