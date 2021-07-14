@@ -287,6 +287,13 @@ th, td {
     height: 20px;
     padding-right: 10px;
 }
+
+.main-container-1{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 0;
+}
+
 .main-container {
     width: 1200px;
     margin: 0 auto;
@@ -358,7 +365,7 @@ th, td {
         text-align: center;
     }
 
-
+    
 /**[Contact]**/
 
 #messageform {

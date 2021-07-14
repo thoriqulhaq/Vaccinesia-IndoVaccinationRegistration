@@ -23,7 +23,7 @@ error_reporting(0);
 
                     <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
                         <div class="container">
-                        <div class="card login-card">
+                        <div class="card login-card" style="border-radius: 30px; padding: 20px;">
                             <div class="row no-gutters">
                                 <div class="card-body">
                                 <div class="brand-wrapper">
@@ -32,37 +32,37 @@ error_reporting(0);
                                 <p class="login-card-description">Edit Status</p>
                                 <form method="post">
                                     <div class="form-group text-left">
-                                    <p>Name:</p>
+                                    <p><b>Name:</b></p>
                                     <?php echo $account1['Name']; ?>
                                     </div>
                                     <div class="form-group mb-4 text-left">
-                                    <p>Address:</p>
+                                    <p><b>Address:</b></p>
                                     <?php echo $account1['Address']; ?>
                                     </div>
                                     <div class="form-group mb-4 text-left">
-                                    <p>Hospital:</p>
+                                    <p><b>Hospital:</b></p>
                                     <?php echo $account1['Hospital']; ?>
                                     </div>
                                     
                                     <div class="form-group mb-4 text-left">
-                                    <p>Vaccine Type:</p>
+                                    <p><b>Vaccine Type:</b></p>
                                     <?php echo $account1['VaccineType']; ?>
                                     </div>
 
                                     <div class="form-group mb-4 text-left">
-                                    <p>Phase:</p>
+                                    <p><b>Phase:</b></p>
                                     <?php echo $account1['Phase']; ?>
                                     </div>
                                         
                                     <div class="form-group mb-4 text-left">
-                                    <p>Date:</p>
+                                    <p><b>Date:</b></p>
                                     <?php echo $account1['Date']; ?>
                                     </div>
 
                                     <div class="form-group mb-4 text-left" id="vacType">
                                     <?php $status = $account1['Status']; 
                                             if($status == 'Unvaccinated') { ?>
-                                            <p>Status:</p>
+                                            <p><b>Status:</b></p>
                                             <input type="radio" name="Status" id="Status1" value="Unvaccinated" checked>
                                             <label for="Status1"class="form-check-label">Unvaccinated</label>
                                             <br>
@@ -70,7 +70,7 @@ error_reporting(0);
                                             <label for="Status2" class="form-check-label">Vaccinated</label>
 
                                         <?php } else if($status == 'Vaccinated')  {?>
-                                            <p>Status:</p>
+                                            <p><b>Status:</b></p>
                                             <input type="radio" name="Status" id="Status1" value="Unvaccinated">
                                             <label for="Status1"class="form-check-label">Unvaccinated</label>
                                             <br>

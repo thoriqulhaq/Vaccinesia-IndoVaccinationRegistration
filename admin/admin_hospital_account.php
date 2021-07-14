@@ -11,7 +11,8 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="table-wrap">	
+                            <div class="table-wrap">
+                            <div class="bg-white p-5 border rounded">	
                                 <?php 
                                             
                                             $cons = mysqli_connect('localhost', 'root', '');
@@ -55,6 +56,7 @@
                                             ?>
                                     </table>
                                     <a href="admin_hospital_add_account.php" name="add" class="btn btn-success">Add</a>
+                            </div>
                             </div>
                         </div>
                     </div>

@@ -64,9 +64,10 @@ else echo "<script>alert('Current Password is Incorrect')</script>";
 
                     <h5>User Profile Information:</h5>
                     <br>
-                    <p>Name: <?php echo $account1['Name']; ?> </p>
-                    <p>Phone Number: (+62) <?php echo $account1['PhoneNum']; ?> </p>
-                    <p>Email: <?php echo $account1['Email']; ?> </p>
+
+                    <p>Name : <?php echo $account1['Name']; ?> </p>
+                    <p>Phone Number : (+62) <?php echo $account1['PhoneNum']; ?> </p>
+                    <p>Email : <?php echo $account1['Email']; ?> </p>
 
                     <?php 
                         }
@@ -74,8 +75,8 @@ else echo "<script>alert('Current Password is Incorrect')</script>";
                     ?>
                      
                      <br>
-                    <div class="bg-white p-2 border rounded" style="width:fit-content">
-                        <form method="POST" action="" align="left">
+                    <div class="bg-white p-3 border rounded" style="width: 450px;">
+                        <form method="POST" action="">
                         <table style="border: none;">
                             <tr>
                                 <td style="border: none;">Old Password</td>
@@ -99,6 +100,9 @@ else echo "<script>alert('Current Password is Incorrect')</script>";
                 </div>
                 <br>
                 <br>
+                <br>
+                <br>
+                <br>
                 <div class="hero-subtitle">
                     <h5>History:</h5>
                     <br>
@@ -115,7 +119,7 @@ else echo "<script>alert('Current Password is Incorrect')</script>";
 
                                                     if ($num > 0) {
                                                     ?>
-                                                        <table class="table table-responsive-xl">
+                                                        <table class="table table-responsive-xl container table table-bordered bg-white">
                                                             <thead>
                                                                 <tr>
                                                                     <th>Name</th>

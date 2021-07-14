@@ -21,7 +21,7 @@ if (session_id() == '' || !isset($_SESSION['user_email'])) {
             <title>Vaccinesia - Indonesia Vaccination</title>
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-            <link rel="shortcut icon" type="image" href="./img/KemenKes-logo-bw.png"/>
+            <link rel="shortcut icon" type="image" href="../img/KemenKes-logo-bw.png"/>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
             <link href="../assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet">
             <link href="../assets/vendor/fontawesome/css/solid.min.css" rel="stylesheet">
@@ -98,7 +98,7 @@ if (session_id() == '' || !isset($_SESSION['user_email'])) {
        <title>Vaccinesia - Indonesia Vaccination</title>
        <link rel="preconnect" href="https://fonts.gstatic.com">
        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-       <link rel="shortcut icon" type="image" href="./img/KemenKes-logo-bw.png"/>
+       <link rel="shortcut icon" type="image" href="../img/KemenKes-logo-bw.png"/>
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
        <link href="../assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet">
        <link href="../assets/vendor/fontawesome/css/solid.min.css" rel="stylesheet">
@@ -300,14 +300,13 @@ if (session_id() == '' || !isset($_SESSION['user_email'])) {
         <title>Vaccinesia - Indonesia Vaccination</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" type="image" href="./img/KemenKes-logo-bw.png"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="../assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet">
         <link href="../assets/vendor/fontawesome/css/solid.min.css" rel="stylesheet">
         <link href="../assets/vendor/fontawesome/css/brands.min.css" rel="stylesheet">
         <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="../assets/css/master.css" rel="stylesheet">
-        <link rel="../shortcut icon" type="image" href="./img/KemenKes-logo-bw.png"/>
+        <link rel="shortcut icon" type="image" href="../img/KemenKes-logo-bw.png"/>
         <link href="../assets/vendor/chartsjs/Chart.min.css" rel="stylesheet">
         <link href="../assets/vendor/flagiconcss/css/flag-icon.min.css" rel="stylesheet">
         <link rel="stylesheet" href="../styles.css">
@@ -324,7 +323,7 @@ if (session_id() == '' || !isset($_SESSION['user_email'])) {
         </section>
 
         <section class="s1">
-            <div class="main-container">
+            <div class="main-container-1">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
                         
@@ -355,8 +354,8 @@ if (session_id() == '' || !isset($_SESSION['user_email'])) {
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact.php">CONTACT US</a>
                                 </li>
-                                <li class="nav-item nav-dropdown">
-                                    <a class="nav-item nav-link dropdown-toggle text-grey" data-toggle="dropdown"><i style="padding-right:10px;" class="fas fa-user"></i> 
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-grey" data-toggle="dropdown"><i style="padding-right:10px;" class="fas fa-user"></i> 
                                     <span> 
                                         <?php 
                                             while ($info = $account_result->fetch_assoc()) {
@@ -366,9 +365,9 @@ if (session_id() == '' || !isset($_SESSION['user_email'])) {
                                             }
                                         ?>
                                     </span> 
-                                    <i style="font-size: .8em; padding-left:10px;" class="fas fa-caret-down"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-right nav-link-menu">
-                                        <ul class="nav-list">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <ul class="nav">
                                             <li><a href="user_profile.php" class="dropdown-item"><i class="fas fa-address-card"></i> Profile</a></li>
                                             <div class="dropdown-divider"></div>
                                             <li><a href="user_logout.php" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
@@ -395,14 +394,14 @@ if (session_id() == '' || !isset($_SESSION['user_email'])) {
         <title>Vaccinesia - Indonesia Vaccination</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" type="image" href="./img/KemenKes-logo-bw.png"/>
+        <link rel="shortcut icon" type="image" href="../img/KemenKes-logo-bw.png/">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="../assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet">
         <link href="../assets/vendor/fontawesome/css/solid.min.css" rel="stylesheet">
         <link href="../assets/vendor/fontawesome/css/brands.min.css" rel="stylesheet">
         <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="../assets/css/master.css" rel="stylesheet">
-        <link rel="../shortcut icon" type="image" href="./img/KemenKes-logo-bw.png"/>
+        <link rel="shortcut icon" type="image" href="../img/KemenKes-logo-bw.png"/>
         <link href="../assets/vendor/chartsjs/Chart.min.css" rel="stylesheet">
         <link href="../assets/vendor/flagiconcss/css/flag-icon.min.css" rel="stylesheet">
         <link rel="stylesheet" href="../styles.css">
@@ -452,8 +451,8 @@ if (session_id() == '' || !isset($_SESSION['user_email'])) {
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact.php">CONTACT US</a>
                                 </li>
-                                <li class="nav-item nav-dropdown">
-                                    <a class="nav-item nav-link dropdown-toggle text-grey" data-toggle="dropdown"><i style="padding-right:10px;" class="fas fa-user"></i> 
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-grey" data-toggle="dropdown"><i style="padding-right:10px;" class="fas fa-user"></i> 
                                     <span> 
                                         <?php 
                                             while ($info = $account_result->fetch_assoc()) {
@@ -463,9 +462,9 @@ if (session_id() == '' || !isset($_SESSION['user_email'])) {
                                             }
                                         ?>
                                     </span> 
-                                    <i style="font-size: .8em; padding-left:10px;" class="fas fa-caret-down"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-right nav-link-menu">
-                                        <ul class="nav-list">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <ul class="nav">
                                             <li><a href="user_profile.php" class="dropdown-item"><i class="fas fa-address-card"></i> Profile</a></li>
                                             <div class="dropdown-divider"></div>
                                             <li><a href="user_logout.php" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
@@ -494,8 +493,8 @@ if (session_id() == '' || !isset($_SESSION['user_email'])) {
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact.php">CONTACT US</a>
                                 </li>
-                                <li class="nav-item nav-dropdown">
-                                    <a class="nav-item nav-link dropdown-toggle text-grey" data-toggle="dropdown"><i style="padding-right:10px;" class="fas fa-user"></i> 
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-grey" data-toggle="dropdown"><i style="padding-right:10px;" class="fas fa-user"></i> 
                                     <span> 
                                         <?php 
                                             while ($info = $account_result->fetch_assoc()) {
@@ -505,9 +504,9 @@ if (session_id() == '' || !isset($_SESSION['user_email'])) {
                                             }
                                         ?>
                                     </span> 
-                                    <i style="font-size: .8em; padding-left:10px;" class="fas fa-caret-down"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-right nav-link-menu">
-                                        <ul class="nav-list">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <ul class="nav">
                                             <li><a href="user_profile.php" class="dropdown-item"><i class="fas fa-address-card"></i> Profile</a></li>
                                             <div class="dropdown-divider"></div>
                                             <li><a href="user_logout.php" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
@@ -536,8 +535,8 @@ if (session_id() == '' || !isset($_SESSION['user_email'])) {
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact.php">CONTACT US</a>
                                 </li>
-                                <li class="nav-item nav-dropdown">
-                                    <a class="nav-item nav-link dropdown-toggle text-grey" data-toggle="dropdown"><i style="padding-right:10px;" class="fas fa-user"></i> 
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-grey" data-toggle="dropdown"><i style="padding-right:10px;" class="fas fa-user"></i> 
                                     <span> 
                                         <?php 
                                             while ($info = $account_result->fetch_assoc()) {
@@ -547,9 +546,9 @@ if (session_id() == '' || !isset($_SESSION['user_email'])) {
                                             }
                                         ?>
                                     </span> 
-                                    <i style="font-size: .8em; padding-left:10px;" class="fas fa-caret-down"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-right nav-link-menu">
-                                        <ul class="nav-list">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <ul class="nav">
                                             <li><a href="user_profile.php" class="dropdown-item"><i class="fas fa-address-card"></i> Profile</a></li>
                                             <div class="dropdown-divider"></div>
                                             <li><a href="user_logout.php" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
@@ -578,8 +577,8 @@ if (session_id() == '' || !isset($_SESSION['user_email'])) {
                                 <li class="nav-item">
                                     <a class="nav-link" href="contact.php">CONTACT US</a>
                                 </li>
-                                <li class="nav-item nav-dropdown">
-                                    <a class="nav-item nav-link dropdown-toggle text-grey" data-toggle="dropdown"><i style="padding-right:10px;" class="fas fa-user"></i> 
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-grey" data-toggle="dropdown"><i style="padding-right:10px;" class="fas fa-user"></i> 
                                     <span> 
                                         <?php 
                                             while ($info = $account_result->fetch_assoc()) {
@@ -589,9 +588,9 @@ if (session_id() == '' || !isset($_SESSION['user_email'])) {
                                             }
                                         ?>
                                     </span> 
-                                    <i style="font-size: .8em; padding-left:10px;" class="fas fa-caret-down"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-right nav-link-menu">
-                                        <ul class="nav-list">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <ul class="nav">
                                             <li><a href="user_profile.php" class="dropdown-item"><i class="fas fa-address-card"></i> Profile</a></li>
                                             <div class="dropdown-divider"></div>
                                             <li><a href="user_logout.php" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
@@ -620,8 +619,8 @@ if (session_id() == '' || !isset($_SESSION['user_email'])) {
                                 <li class="nav-item">
                                     <a class="nav-link active" href="contact.php">CONTACT US</a>
                                 </li>
-                                <li class="nav-item nav-dropdown">
-                                    <a class="nav-item nav-link dropdown-toggle text-grey" data-toggle="dropdown"><i style="padding-right:10px;" class="fas fa-user"></i> 
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-grey" data-toggle="dropdown"><i style="padding-right:10px;" class="fas fa-user"></i> 
                                     <span> 
                                         <?php 
                                             while ($info = $account_result->fetch_assoc()) {
@@ -631,9 +630,9 @@ if (session_id() == '' || !isset($_SESSION['user_email'])) {
                                             }
                                         ?>
                                     </span> 
-                                    <i style="font-size: .8em; padding-left:10px;" class="fas fa-caret-down"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-right nav-link-menu">
-                                        <ul class="nav-list">
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <ul class="nav">
                                             <li><a href="user_profile.php" class="dropdown-item"><i class="fas fa-address-card"></i> Profile</a></li>
                                             <div class="dropdown-divider"></div>
                                             <li><a href="user_logout.php" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a></li>

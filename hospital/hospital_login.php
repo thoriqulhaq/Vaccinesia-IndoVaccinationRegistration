@@ -41,6 +41,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="shortcut icon" type="image" href="../img/KemenKes-logo-bw.png"/>
   <link rel="stylesheet" href="../login.css">
   <link rel="stylesheet" href="../styles.css">
 </head>

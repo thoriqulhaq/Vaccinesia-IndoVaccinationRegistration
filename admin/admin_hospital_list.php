@@ -12,6 +12,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="table-wrap">	
+                            <div class="bg-white p-5 border rounded">
                                 <?php 
                                             
                                             $cons = mysqli_connect('localhost', 'root', '');
@@ -56,6 +57,7 @@
                                             }
                                             ?>
                                     </table>
+                            </div>
                             </div>
                         </div>
                     </div>

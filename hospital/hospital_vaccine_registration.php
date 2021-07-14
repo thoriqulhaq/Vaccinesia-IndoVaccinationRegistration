@@ -11,7 +11,8 @@ include("page_header.php"); ?>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="table-wrap">	
+                            <div class="table-wrap">
+                            <div class="bg-white p-4 border rounded">	
                                 <?php 
                                             $province = null;
 
@@ -56,6 +57,7 @@ include("page_header.php"); ?>
                                             }
                                             ?>
                                     </table>
+                            </div>    
                             </div>
                         </div>
                     </div>

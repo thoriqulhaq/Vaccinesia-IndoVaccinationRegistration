@@ -23,6 +23,7 @@ $account_result = mysqli_query($con, "select Name from admin where Email = '$acc
     <link href="../assets/vendor/fontawesome/css/solid.min.css" rel="stylesheet">
     <link href="../assets/vendor/fontawesome/css/brands.min.css" rel="stylesheet">
     <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image" href="../img/KemenKes-logo-bw.png"/>
     <link href="../assets/css/master.css" rel="stylesheet">
     <link rel="../shortcut icon" type="image" href="./img/KemenKes-logo-bw.png"/>
     <link href="../assets/vendor/chartsjs/Chart.min.css" rel="stylesheet">

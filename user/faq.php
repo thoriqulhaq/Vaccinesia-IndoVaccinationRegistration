@@ -26,17 +26,17 @@ include("page_header.php"); ?>
                 
                 <button class="accordion1 "><b>How can I register?</b></button>
                 <div class="panel">
-                <p>Lorem ipsum...</p>
+                <p>Go to Home -> Click Register Here (Login Required)</p>
                 </div>
 
                 <button class="accordion1 "><b>What is the service hotline ?</b></button>
                 <div class="panel">
-                <p>Lorem ipsum...</p>
+                <p>You may call (021) 87654321 or send us a message by go to contact us.</p>
                 </div>
 
                 <button class="accordion1 "><b>I want to get my child/ward vaccinated. What do I need to do ?</b></button>
                 <div class="panel">
-                <p>Lorem ipsum...</p>
+                <p>For children under 12 is not recommended. We urge you to wait for a suitable vaccine for minors.</p>
                 </div> 
             </div>
         </section>

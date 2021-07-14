@@ -24,7 +24,7 @@ $account_result = mysqli_query($con, "select HospitalName from hospital where Em
     <link href="../assets/vendor/fontawesome/css/brands.min.css" rel="stylesheet">
     <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/css/master.css" rel="stylesheet">
-    <link rel="../shortcut icon" type="image" href="./img/KemenKes-logo-bw.png"/>
+    <link rel="shortcut icon" type="image" href="../img/KemenKes-logo-bw.png"/>
     <link href="../assets/vendor/chartsjs/Chart.min.css" rel="stylesheet">
     <link href="../assets/vendor/flagiconcss/css/flag-icon.min.css" rel="stylesheet">
 </head>
@@ -54,7 +54,7 @@ $account_result = mysqli_query($con, "select HospitalName from hospital where Em
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item dropdown">
                             <div class="nav-dropdown">
-                                <a href="" class="nav-item nav-link dropdown-toggle text-light" data-toggle="dropdown"><i style="padding-right:10px;" class="fas fa-user"></i> <span> 
+                                <a href="" class="nav-item nav-link dropdown-toggle text-light" data-toggle="dropdown"><i style="padding-right:10px;" class="fas fa-hospital"></i> <span> 
                                     <?php 
                                         while ($info = $account_result->fetch_assoc()) {
                                             $myvalue = $info['HospitalName'];

@@ -17,7 +17,8 @@ include("page_header.php"); ?>
                     <div class="inner-form">
                         <div class="outer-input">
                             <div class="inner-input-1">
-                                <select name="province" id="province">
+                                <select name="province" id="province" class="browser-default custom-select" aria-label="Default select example">
+                                    <option selected>Province</option>
                                     <option value="Aceh">
                                         ACEH
                                     </option>
@@ -123,11 +124,11 @@ include("page_header.php"); ?>
                                 </select>
                             </div>
                             <div class="inner-input-2">
-                                <input id="search" type="submit" name="submit" value="Search">
+                                <input class="btn btn-dark" id="search" type="submit" name="submit" value="Search">
                             </div>
                         </div>
-                        <div class="content-wrapper-location">
-                                <div class="available-location-1">
+                        <div class="content-wrapper-location container bg-light p-5 rounded">
+                                <div class="container text-center">
                                     <?php 
                                     
                                     $province = null;
@@ -139,7 +140,7 @@ include("page_header.php"); ?>
                                         if ($num > 0) {
                                     ?>
                                         <h5><?php echo $num; ?> Result</h5><br>
-                                        <table>
+                                        <table class="container table table-bordered bg-white">
                                                 <tr>
                                                     <th rowspan="2">City</th>
                                                     <th rowspan="2">Hospital</th>

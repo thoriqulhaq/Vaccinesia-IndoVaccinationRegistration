@@ -37,7 +37,7 @@ include("page_header.php"); ?>
                     <h1>Vaccine Info</h1>
                     <p>Check the latest vaccine information in Indonesia.</p>
                     <div id="learnmore-button">
-                        <a href="advisory.php">LEARN MORE</a>
+                        <a href="vaccine.php">LEARN MORE</a>
                     </div>
                 </div>
                 <div class="hero-picture">

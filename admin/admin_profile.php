@@ -56,11 +56,23 @@ else echo "<script>alert('Current Password is Incorrect')</script>";
                             while($account1 = mysqli_fetch_array($result1)){
                             ?>
                     
-
-                    <h5>Admin Profile Information:</h5>
+                    <div class="bg-white p-5 border rounded">
+                    <h5><b>Admin Profile Information:</b></h5>
                     <br>
-                    <p>Name: <?php echo $account1['Name']; ?> </p>
-                    <p>Email: <?php echo $account1['Email']; ?> </p>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>Name</td>
+                                <td class="w-25 text-center"> : </td>
+                                <td><?php echo $account1['Name']; ?> </td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td class="w-25 text-center">:</td>
+                                <td><?php echo $account1['Email']; ?> </td>
+                            </tr>
+                        </table>
+                    </div>
 
                     <?php 
                         }
@@ -68,22 +80,29 @@ else echo "<script>alert('Current Password is Incorrect')</script>";
                     ?>
                      
                      <br>
-                    <div class="bg-white p-2 border rounded" style="width:fit-content">
+                     <br/>
+                    <div class="bg-light p-4 border rounded" style="width:fit-content">
                         <form method="POST" action="" align="left">
                         <table>
                             <tr>
                                 <td>Old Password</td>
+                                <td></td>
                                 <td>: </td>
+                                <td></td>
                                 <td><input class="form-control" type="password" name="Password" required></td>
                             <tr>
                             <tr>
                                 <td>New Password</td>
+                                <td></td>
                                 <td>: </td>
+                                <td></td>
                                 <td><input class="form-control" type="password" name="newPass1" required></td>
                             <tr>
                             <tr>
                                 <td>Confirm Password</td>
+                                <td></td>
                                 <td>: </td>
+                                <td></td>
                                 <td><input class="form-control" type="password" name="newPass2" required></td>
                             <tr>
                             <tr>
@@ -96,7 +115,7 @@ else echo "<script>alert('Current Password is Incorrect')</script>";
                     </div>
 
                 </div>
-
+                </div>
                 
                 </div>
             </div>

@@ -45,6 +45,7 @@ if(isset ($_POST['astrazeneca'])) {
                             <h2 class="heading-section">Vaccine Stock Management</h2>
                         </div>
                     </div>
+    <div class="bg-white p-5 border rounded">
     <form method="POST">
         <table class="table table-responsive-xl">
         <thead>
@@ -68,6 +69,7 @@ if(isset ($_POST['astrazeneca'])) {
         </tbody>
         </table>
     </form>
+    </div>
 </div>
 
 <?php
