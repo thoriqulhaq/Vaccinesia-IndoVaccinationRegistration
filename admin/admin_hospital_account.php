@@ -30,6 +30,7 @@
                                                             <th>Hospital Name</th>
                                                             <th>Email</th>
                                                             <th>Hotline</th>
+                                                            <th>Delete</th>
                                                         </tr>
                                                     </thead>
                                             <?php
@@ -40,7 +41,7 @@
                                                         <td> <?php echo $d['HospitalName']; ?> </td>
                                                         <td> <?php echo $d['Email']; ?> </td>
                                                         <td> (021) <?php echo $d['Hotline']; ?> </td>      
-                                                        <td></td>
+                                                        <td><a href="admin_hospital_delete_account.php?hospitalid=<?php echo $d["HospitalID"]; ?>" name="delete" type="button" class="btn btn-danger">Delete</a></td>
                                                     </tr>
                                                 </tbody>
                                                 
@@ -53,6 +54,7 @@
                                             }
                                             ?>
                                     </table>
+                                    <a href="admin_hospital_add_account.php" name="add" class="btn btn-success">Add</a>
                             </div>
                         </div>
                     </div>

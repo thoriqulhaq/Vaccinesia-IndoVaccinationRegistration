@@ -10,7 +10,7 @@
   $password = $_POST['admin_password'];
 
 
-  $s = "select * from admin where email = '$email' && password = '$password'";
+  $s = "select * from admin where email = '$email' && password = '".md5($password)."'";
 
   $result = mysqli_query($con, $s);
 
@@ -24,8 +24,7 @@
       header('Location:admin_dashboard.php'); //redirect to main
     }
     else {
-      
-      echo "Wrong Email or Password";
+      echo "<script>alert('Wrong Email or Password')</script>";
     }
   }
 ?>
@@ -82,7 +81,7 @@
       
     </div>
   </main>
-  <script src="js/script.js"></noscript>
+  <script src="../js/script.js"> </script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>

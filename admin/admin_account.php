@@ -1,5 +1,8 @@
 
-<?php include("page_header.php"); ?>
+<?php 
+include("page_header.php"); 
+$account = $_SESSION["admin_email"];
+?>
 
             <section class="ftco-section">
                 <div class="container">
@@ -7,7 +10,7 @@
                         <div class="col-md-6 text-center mb-5">
                             <br>
                             <br>
-                            <h2 class="heading-section">Hospital Account Management</h2>
+                            <h2 class="heading-section">Admin Account Management</h2>  
                         </div>
                     </div>
                     <div class="row">
@@ -19,7 +22,7 @@
                                             mysqli_select_db($cons, 'vaccinesia');
                                             $province = null;
 
-                                            $result = mysqli_query($cons, "select * from hospital");
+                                            $result = mysqli_query($cons, "select * from admin");
                                             $num = mysqli_num_rows($result);
 
                                             if ($num > 0) {
@@ -28,9 +31,9 @@
                                                 <table class="table table-responsive-xl">
                                                     <thead>
                                                         <tr>
-                                                            <th>Hospital Name</th>
+                                                            <th>Admin</th>
                                                             <th>Email</th>
-                                                            <th>Hotline</th>
+                                                            <th>Delete</th>
                                                         </tr>
                                                     </thead>
                                             <?php
@@ -38,12 +41,12 @@
                                                 ?>  
                                                 <tbody>
                                                     <tr>
-                                                        <td> <?php echo $d['HospitalName']; ?> </td>
+                                                        <td> <?php echo $d['Name']; ?> </td>
                                                         <td> <?php echo $d['Email']; ?> </td>
-                                                        <td> (021) <?php echo $d['Hotline']; ?> </td>      
-                                                        <td></td>
+                                                        <td><a href="admin_delete_account.php?adminid=<?php echo $d["AdminID"]; ?>" name="delete" type="button" class="btn btn-danger">Delete</a></td>
                                                     </tr>
                                                 </tbody>
+                                                
                                                 
                                             <?php 
                                             }
@@ -54,6 +57,8 @@
                                             }
                                             ?>
                                     </table>
+
+                                    <a href="admin_add_account.php" name="add" class="btn btn-success">Add</a>
                             </div>
                         </div>
                     </div>

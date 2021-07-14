@@ -1,12 +1,12 @@
 <?php
-session_start(); //gets session id from cookies, or prepa
+session_start(); 
 if (session_id() == '' || !isset($_SESSION['hospital_email'])) {
     header("Location: hospital_login.php");
 }
 
 include("../config.php");
 $account = $_SESSION["hospital_email"];
-$account_result = mysqli_query($con, "select Name from admin where Email = '$account'");
+$account_result = mysqli_query($con, "select HospitalName from hospital where Email = '$account'");
 
 ?>
 
@@ -37,27 +37,13 @@ $account_result = mysqli_query($con, "select Name from admin where Email = '$acc
             </div>
             <ul class="list-unstyled components text-secondary">
                 <li>
-                    <a href="admin_dashboard.php"><i class="fas fa-home"></i> Dashboard</a>
+                    <a href="hospital_dashboard.php"><i class="fas fa-home"></i> Dashboard</a>
                 </li>
                 <li>
-                    <a href="#uielementsmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle no-caret-down"><i class="fas fa-user"></i> Account</a>
-                    <ul class="collapse list-unstyled" id="uielementsmenu">
-                        <li>
-                            <a href="admin_account.php"><i class="fas fa-angle-right"></i> Admin</a>
-                        </li>
-                        <li>
-                            <a href="admin_user_account.php"><i class="fas fa-angle-right"></i> User</a>
-                        </li>
-                        <li>
-                            <a href="admin_hospital_account.php"><i class="fas fa-angle-right"></i> Hospital</a>
-                        </li>
-                    </ul>
+                    <a href="hospital_vaccine_registration.php"><i class="fas fa-user"></i> Vaccine Registration</a>
                 </li>
                 <li>
-                    <a href="admin_vacinne_registration.php"><i class="fas fa-syringe"></i> Vaccine Registration</a>
-                </li>
-                <li>
-                    <a href="admin_hospital_list.php"><i class="fas fa-hospital"></i> Hospital List</a>
+                    <a href="vaccine.php"><i class="fas fa-syringe"></i> Vaccine Stock</a>
                 </li>
             </ul>
         </nav>
@@ -71,16 +57,16 @@ $account_result = mysqli_query($con, "select Name from admin where Email = '$acc
                                 <a href="" class="nav-item nav-link dropdown-toggle text-light" data-toggle="dropdown"><i style="padding-right:10px;" class="fas fa-user"></i> <span> 
                                     <?php 
                                         while ($info = $account_result->fetch_assoc()) {
-                                            $myvalue = $info['Name'];
+                                            $myvalue = $info['HospitalName'];
                                             echo ($myvalue);
                                         }
                                     ?>
                                 </span> <i style="font-size: .8em; padding-left:10px;" class="fas fa-caret-down"></i></a>
                                 <div class="dropdown-menu dropdown-menu-right nav-link-menu">
                                     <ul class="nav-list">
-                                        <li><a href="" class="dropdown-item"><i class="fas fa-address-card"></i> Profile</a></li>
+                                        <li><a href="hospital_profile.php" class="dropdown-item"><i class="fas fa-address-card"></i> Profile</a></li>
                                         <div class="dropdown-divider"></div>
-                                        <li><a href="admin_logout.php" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                                        <li><a href="hospital_logout.php" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
                                     </ul>
                                 </div>
                             </div>

@@ -24,10 +24,10 @@
                                                 <p class="detail-subtitle">Registered User</p>
                                                 <?php 
                                                 
-                                                    $cons = mysqli_connect('localhost', 'root', '');
-                                                    mysqli_select_db($cons, 'vaccinesia');
+                                                    $con = mysqli_connect('localhost', 'root', '');
+                                                    mysqli_select_db($con, 'vaccinesia');
 
-                                                    $result1 = mysqli_query($cons, "select * from user");
+                                                    $result1 = mysqli_query($con, "select * from user");
                                                     $num1 = mysqli_num_rows($result1);
 
                                                 ?>
@@ -58,7 +58,7 @@
                                                 <p class="detail-subtitle">Registered Hospital</p>
                                                 <?php 
                                                 
-                                                $result2 = mysqli_query($cons, "select * from hospital_location");
+                                                $result2 = mysqli_query($con, "select * from hospital_location");
                                                 $num2 = mysqli_num_rows($result2);
                                                 
                                                 ?>
@@ -89,7 +89,7 @@
                                                 <p class="detail-subtitle">Registered For Vaccination</p>
                                                 <?php 
                                                 
-                                                $result3 = mysqli_query($cons, "select * from reg_vac");
+                                                $result3 = mysqli_query($con, "select * from reg_vac");
                                                 $num3 = mysqli_num_rows($result3);
                                                 
                                                 ?>
@@ -120,11 +120,11 @@
                                                 <p class="detail-subtitle">Mail</p>
                                                 <?php 
                                                 
-                                                $result4 = mysqli_query($cons, "select * from mail");
+                                                $result4 = mysqli_query($con, "select * from mail");
                                                 $num4 = mysqli_num_rows($result4);
                                                 
                                                 ?>
-                                                <span class="number"><?php echo $num3; ?></span>
+                                                <span class="number"><?php echo $num4; ?></span>
                                             </div>
                                         </div>
                                     </div>

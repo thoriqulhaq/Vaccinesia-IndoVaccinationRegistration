@@ -27,6 +27,7 @@ $account_result = mysqli_query($con, "select Name from admin where Email = '$acc
     <link rel="../shortcut icon" type="image" href="./img/KemenKes-logo-bw.png"/>
     <link href="../assets/vendor/chartsjs/Chart.min.css" rel="stylesheet">
     <link href="../assets/vendor/flagiconcss/css/flag-icon.min.css" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -59,6 +60,9 @@ $account_result = mysqli_query($con, "select Name from admin where Email = '$acc
                 <li>
                     <a href="admin_hospital_list.php"><i class="fas fa-hospital"></i> Hospital List</a>
                 </li>
+                <li>
+                    <a href="admin_mail.php"><i class="fas fa-envelope"></i> Mail</a>
+                </li>
             </ul>
         </nav>
         <div id="body" class="active">
@@ -79,7 +83,7 @@ $account_result = mysqli_query($con, "select Name from admin where Email = '$acc
                                 </span> <i style="font-size: .8em; padding-left:10px;" class="fas fa-caret-down"></i></a>
                                 <div class="dropdown-menu dropdown-menu-right nav-link-menu">
                                     <ul class="nav-list">
-                                        <li><a href="" class="dropdown-item"><i class="fas fa-address-card"></i> Profile</a></li>
+                                        <li><a href="admin_profile.php" class="dropdown-item"><i class="fas fa-address-card"></i> Profile</a></li>
                                         <div class="dropdown-divider"></div>
                                         <li><a href="admin_logout.php" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
                                     </ul>

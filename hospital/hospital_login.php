@@ -10,7 +10,7 @@
   $password = $_POST['hospital_password'];
 
 
-  $s = "select * from hospital where email = '$email' && password = '$password'";
+  $s = "select * from hospital where email = '$email' && password = '".md5($password)."'";
 
   $result = mysqli_query($con, $s);
 
@@ -25,7 +25,8 @@
     }
     else {
       
-      echo "Wrong Email or Password";
+      echo "<script>alert('Username/Password incorrect!')</script>";
+      echo "<script>location.href='hospital_login.php'</script>";
     }
   }
 ?>

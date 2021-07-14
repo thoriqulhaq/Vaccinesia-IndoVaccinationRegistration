@@ -10,7 +10,7 @@
   $password = $_POST['user_password'];
 
 
-  $s = "select * from admin where email = '$email' && password = '$password'";
+  $s = "select * from admin where email = '$email' && password = '".md5($password)."'";
 
   $result = mysqli_query($con, $s);
 
@@ -23,8 +23,9 @@
       header('Location:index.php'); 
     }
     else {
-      
-      echo "Wrong Email or Password";
+      echo "<script>alert('Username/Password incorrect!')</script>";
+      echo "<script>location.href='user_login.php'</script>";
+     
     }
   }
 ?>
@@ -53,7 +54,7 @@
           <div class="col-md-7">
             <div class="card-body">
               <div class="brand-wrapper">
-                <h1 style="color:#858CE4;" ><a style="color:#858CE4;" href="index.html">Vaccinesia</a></h1>
+                <h1 style="color:#858CE4;" ><a style="color:#858CE4;" href="index.php">Vaccinesia</a></h1>
               </div>
               <p class="login-card-description">Login into your account</p>
               <form method="post">

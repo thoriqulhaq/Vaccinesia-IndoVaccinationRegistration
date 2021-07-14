@@ -1,4 +1,21 @@
-<?php include("page_header.php"); ?>
+<?php 
+$identifier = 5;
+include("page_header.php"); 
+
+error_reporting(0);
+session_start();
+
+$email= $_POST['email'];
+$name = $_POST['fullname'];
+$message = $_POST['message'];
+
+if (isset($_POST["submit"])) {
+      $reg = "insert into mail (email, fullname, message) values ('$email', '$name', '$message')";
+      mysqli_query($con, $reg);
+      echo "<script>alert('Message has been sent')</script>";
+      echo "<script>location.href='contact.php'</script>";
+
+  }?>
         </div>
         </section>
 
@@ -12,9 +29,9 @@
                         </div>
                     </div>
                     <div class="hero-form">
-                        <form id="messageform" action="/action_page.php">
+                        <form method="post" id="messageform">
                             <label for="email">Email</label>
-                            <input type="text" id="email" name="emailaddress" placeholder="example@gmail.com">
+                            <input type="text" id="email" name="email" placeholder="example@gmail.com">
                                     
                             <label for="name">Full Name</label>
                             <input type="text" id="name" name="fullname" placeholder="John Doe">
@@ -22,7 +39,7 @@
                             <label for="message">Message</label>
                             <textarea id="message" name="message" placeholder="Leave message here!" style="height:125px"></textarea>
 
-                            <input type="reset" value="Submit" id="btnsubmit" onclick="alert('Your Message Has been Sent'); submitForm('btnsubmit')">
+                            <button name="submit" type="submit" id="btnsubmit" class="btn bg-violet text-light">Submit</button>
                         </form>
                     </div>
                 </div>

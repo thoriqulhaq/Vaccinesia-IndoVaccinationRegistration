@@ -497,7 +497,7 @@ small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}
 
 #hospital {
     padding: 15px 25px;
-    border: 1px solid #d5dae2;
+    border: 1px solid #858CE4;
     font-weight: normal; 
     border-radius: 5px;
     font-size: 13px;
@@ -506,12 +506,20 @@ small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}
 
 #phase {
     padding: 15px 25px;
-    border: 1px solid #d5dae2;
+    border: 1px solid #858CE4;
     font-weight: normal; 
     border-radius: 5px;
     font-size: 13px;
     width: 100%;
-    margin-bottom: 50px;
+}
+
+#date {
+    padding: 15px 25px;
+    border: 1px solid #858CE4;
+    font-weight: normal; 
+    border-radius: 5px;
+    font-size: 13px;
+    width: 100%;
 }
 
 #search {

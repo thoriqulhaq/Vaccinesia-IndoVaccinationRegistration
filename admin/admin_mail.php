@@ -1,12 +1,12 @@
 
-<?php include("page_header.php"); ?>
+    <?php include("page_header.php"); ?>
             <section class="ftco-section">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-6 text-center mb-5">
                             <br>
                             <br>
-                            <h2 class="heading-section">Vaccine Registration</h2>
+                            <h2 class="heading-section">Mail</h2>
                         </div>
                     </div>
                     <div class="row">
@@ -18,7 +18,7 @@
                                             mysqli_select_db($cons, 'vaccinesia');
                                             $province = null;
 
-                                            $result = mysqli_query($cons, "select * from reg_vac");
+                                            $result = mysqli_query($cons, "select * from mail");
                                             $num = mysqli_num_rows($result);
 
                                             if ($num > 0) {
@@ -27,13 +27,9 @@
                                                 <table class="table table-responsive-xl">
                                                     <thead>
                                                         <tr>
-                                                            <th>Name</th>
-                                                            <th>Address</th>
-                                                            <th>Hospital</th>
-                                                            <th>Vaccine Type</th>
-                                                            <th>Phase</th>
-                                                            <th>Date</th>
-                                                            <th>Status</th>
+                                                            <th>Email</th>
+                                                            <th>Full name</th>
+                                                            <th>Message</th>
                                                         </tr>
                                                     </thead>
                                             <?php
@@ -41,13 +37,9 @@
                                                 ?>  
                                                 <tbody>
                                                     <tr>
-                                                        <td> <?php echo $d['Name']; ?> </td>
-                                                        <td> <?php echo $d['Address']; ?> </td>
-                                                        <td> <?php echo $d['Hospital']; ?> </td>      
-                                                        <td> <?php echo $d['VaccineType']; ?> </td>
-                                                        <td> <?php echo $d['Phase']; ?> </td>
-                                                        <td> <?php echo $d['Date']; ?> </td>
-                                                        <td> <?php echo $d['Status']; ?> </td>
+                                                        <td> <?php echo $d['Email']; ?> </td>
+                                                        <td> <?php echo $d['FullName']; ?> </td>
+                                                        <td> <?php echo $d['Message']; ?> </td>
                                                     </tr>
                                                 </tbody>
                                                 

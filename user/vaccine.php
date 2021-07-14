@@ -1,4 +1,7 @@
-<?php include("page_header.php"); ?>
+<?php 
+$identifier = 1;
+include("page_header.php"); 
+?>
         </div>
         </section>
         
@@ -15,7 +18,7 @@
                         <div class="content-wrapper-2">
                             <div class="hero-word">
                                 <h1>Sinovac</h1>
-                                <p>All you need to know about vaccine <i>Sinovac</i>.</p>
+                                <p>All you need to know about <i>Sinovac</i> vaccine.</p>
                                 <div id="learnmore-button">
                                     <a href="sinovac.html">LEARN MORE</a>
                                 </div>
@@ -34,7 +37,7 @@
                         <div class="content-wrapper-2">
                             <div class="hero-word">
                                 <h1>Astrazeneca</h1>
-                                <p>All you need to know about vaccine <i>Astrazeneca</i>.</p>
+                                <p>All you need to know about <i>Astrazeneca</i> vaccine.</p>
                                 <div id="learnmore-button">
                                     <a href="astrazeneca.html">LEARN MORE</a>
                                 </div>

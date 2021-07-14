@@ -1,4 +1,6 @@
-<?php include("page_header.php"); ?>
+<?php 
+$identifier = 4;
+include("page_header.php"); ?>
         </div>
         </section>
 

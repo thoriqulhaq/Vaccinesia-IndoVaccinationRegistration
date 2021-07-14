@@ -1,12 +1,16 @@
-<?php include("page_header.php"); ?>
+
+
+<?php 
+$identifier = 0;
+include("page_header.php"); ?>
             <div class="hero">
                 <h1>Vaccinesia</h1>
                 <h3>COVID-19 Vaccination Registration</h3>
                 <br>
                 <br>
-                <a id="button-regist" href="vaccine_registration.php"><b>REGISTER HERE</b></a>
+                <a id="button-regist" href="vaccine_registration.php"><b>REGISTER HERE (Login Required)</b></a>
             </div>
-        </div>
+</div>
     </section>
 
     <section class="s2">

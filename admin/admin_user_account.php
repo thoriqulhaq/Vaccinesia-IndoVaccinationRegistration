@@ -41,7 +41,7 @@
                                                         <td> <?php echo $d['Name']; ?> </td>
                                                         <td> (+62) <?php echo $d['PhoneNum']; ?> </td>
                                                         <td> <?php echo $d['Email']; ?> </td>
-                                                        <td></td>
+                                                        <td><a href="admin_user_delete_account.php?userid=<?php echo $d["UserID"]; ?>" name="delete" type="button" class="btn btn-danger">Delete</a></td>
                                                     </tr>
                                                 </tbody>
                                                 
