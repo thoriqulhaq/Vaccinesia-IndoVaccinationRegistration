@@ -10,7 +10,7 @@
   $password = $_POST['user_password'];
 
 
-  $s = "select * from admin where email = '$email' && password = '".md5($password)."'";
+  $s = "select * from user where email = '$email' && password = '".md5($password)."'";
 
   $result = mysqli_query($con, $s);
 
